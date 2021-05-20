@@ -1,0 +1,22 @@
+GET http://127.0.0.1:8000/api/days HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/api/days HTTP/1.1
+Content-Type: application/json
+
+{
+    "date" : "26/06/2021",
+    "state" : "NRW"
+}
+
+###
+
+POST  http://127.0.0.1:8000/api/days/4
+Content-Type: application/json
+
+{
+    "state" : "LS"
+}
+###
+DELETE http://127.0.0.1:8000/api/days/3
